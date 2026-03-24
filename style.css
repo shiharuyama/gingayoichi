@@ -85,8 +85,6 @@ img {
   /* header */
   --header-height: 40px;
 
-  /* z-index */
-  --z-header: 100;
 }
 
 
@@ -142,6 +140,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   overflow-x: hidden;
+  position: relative;
 }
 
 [id] {
@@ -165,7 +164,7 @@ body {
 /* Section Common */
 /* ======================================== */
 
-/* セクションヘッダー */
+/* Section header */
 .section-header {
   text-align: center;
   margin-bottom: 60px;
@@ -187,6 +186,66 @@ body {
   margin-left: auto;
 }
 
+/* Lantern */
+.lantern {
+  position: absolute;
+  opacity: 0;
+  will-change: transform, opacity;
+  z-index: 5;
+}
+
+.lantern svg {
+  width: 4vw;
+  height: auto;
+}
+
+/* Section Niche (cloud SVG slide-in) */
+
+.section-niche {
+  overflow: hidden;
+  line-height: 0;
+  pointer-events: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-niche__img {
+  display: block;
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+}
+
+.section-niche--left .section-niche__img {
+  margin-left: 0;
+  transform: translateX(-120%);
+}
+
+.section-niche--right .section-niche__img {
+  margin-left: auto;
+  margin-right: 0;
+  transform: translateX(120%);
+}
+
+.section-niche--left.is-visible .section-niche__img,
+.section-niche--right.is-visible .section-niche__img {
+  transform: translateX(0);
+  transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Fade-in animation */
+
+.js-fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.js-fadein.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* ======================================== */
 /* Header */
@@ -201,7 +260,7 @@ body {
   background: var(--color-nav-bg);
   border-bottom: 1px solid #ffffff1a;
   backdrop-filter: blur(2px);
-  z-index: var(--z-header);
+  z-index: 100;
 }
 
 /* ナビ */
