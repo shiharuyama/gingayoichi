@@ -15,12 +15,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400&family=Shippori+Mincho:wght@600&display=swap"
     rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400&family=Shippori+Mincho:wght@600&family=Zen+Old+Mincho:wght@400;500;600&display=swap"
+    rel="stylesheet">
+    
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="main.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -31,10 +32,11 @@
   <header class="header" id="header">
     <nav class="header__nav">
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="#events" class="header__nav-link">イベント</a></li>
-        <li class="header__nav-item"><a href="#map" class="header__nav-link">マップ</a></li>
-        <li class="header__nav-item"><a href="#schedule" class="header__nav-link">タイムスケジュール</a></li>
-        <li class="header__nav-item"><a href="#shops" class="header__nav-link">出店店舗</a></li>
+        <li class="header__nav-item"><a href="index.html#events" class="header__nav-link">イベント</a></li>
+        <li class="header__nav-item"><a href="index.html#map" class="header__nav-link">マップ</a></li>
+        <li class="header__nav-item"><a href="index.html#schedule" class="header__nav-link">タイムスケジュール</a></li>
+        <li class="header__nav-item"><a href="index.html#shops" class="header__nav-link">出店店舗</a></li>
+        <li class="header__nav-item"><a href="index.html#contact" class="header__nav-link">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -50,8 +52,8 @@
     </div>
     <div class="event-hero__body">
       <div class="event-hero__inner">
-        <p class="event-hero__category text-caption">ステージイベント</p>
-        <h1 class="event-hero__title text-hero">スカイランタンの打ち上げ</h1>
+        <p class="event-hero__category">イベント</p>
+        <h1 class="event-hero__title">スカイランタンの打ち上げ</h1>
       </div>
     </div>
   </section>
@@ -71,20 +73,20 @@
 
       <dl class="event-overview__meta">
         <div class="event-overview__meta-row">
-          <dt class="event-overview__meta-label text-small">受け渡し時間</dt>
-          <dd class="event-overview__meta-value text-small">16:00〜19:00</dd>
+          <dt class="event-overview__meta-label">受け渡し時間</dt>
+          <dd class="event-overview__meta-value">16:00〜19:00</dd>
         </div>
         <div class="event-overview__meta-row">
-          <dt class="event-overview__meta-label text-small">打ち上げ時間</dt>
-          <dd class="event-overview__meta-value text-small">20:00〜</dd>
+          <dt class="event-overview__meta-label">打ち上げ時間</dt>
+          <dd class="event-overview__meta-value">21:00〜</dd>
         </div>
         <div class="event-overview__meta-row">
-          <dt class="event-overview__meta-label text-small">参加費</dt>
-          <dd class="event-overview__meta-value text-small">4,500円（ランタン1個含む）</dd>
+          <dt class="event-overview__meta-label">参加費　　　</dt>
+          <dd class="event-overview__meta-value">4,500円<br>(ランタン1個含む)</dd>
         </div>
         <div class="event-overview__meta-row">
-          <dt class="event-overview__meta-label text-small">場所</dt>
-          <dd class="event-overview__meta-value text-small">大阪城公園　太陽の広場</dd>
+          <dt class="event-overview__meta-label">場所　　　　</dt>
+          <dd class="event-overview__meta-value">大阪城公園　太陽の広場</dd>
         </div>
       </dl>
 
@@ -99,7 +101,7 @@
     <div class="event-flow__inner">
 
       <div class="section-header">
-        <span class="section-header__title text-heading">当日の流れ</span>
+        <span class="section-header__title">当日の流れ</span>
         <span class="section-header__bar"></span>
       </div>
 
@@ -107,34 +109,34 @@
 
         <li class="event-flow__item">
           <div class="event-flow__step">
-            <span class="event-flow__step-num text-caption">01</span>
+            <span class="event-flow__step-num">01</span>
           </div>
           <div class="event-flow__body">
-            <p class="event-flow__time text-caption">16:00〜19:00</p>
-            <p class="event-flow__name text-subheading">ランタンの受け取り</p>
-            <p class="event-flow__desc text-small">受付にてランタンをお受け取りください。参加費のお支払いはこちらで行います。ランタンには願い事を書くスペースがあります。</p>
+            <p class="event-flow__time">16:00〜19:00</p>
+            <h3 class="event-flow__name">ランタンの受け取り</h3>
+            <p class="event-flow__desc">受付にてランタンをお受け取りください。参加費のお支払いはこちらで行います。ランタンには願い事を書くスペースがあります。</p>
           </div>
         </li>
 
         <li class="event-flow__item">
           <div class="event-flow__step">
-            <span class="event-flow__step-num text-caption">02</span>
+            <span class="event-flow__step-num">02</span>
           </div>
           <div class="event-flow__body">
-            <p class="event-flow__time text-caption">19:00〜20:00</p>
-            <p class="event-flow__name text-subheading">願いを書いて準備</p>
-            <p class="event-flow__desc text-small">ランタンに願い事をお書きください。ペンは受付にてお貸し出しします。打ち上げ場所へのご案内は20時より行います。</p>
+            <p class="event-flow__time">19:00〜20:00</p>
+            <h3 class="event-flow__name">願いを書いて準備</h3>
+            <p class="event-flow__desc">ランタンに願い事をお書きください。ペンは受付にてお貸し出しします。打ち上げ場所へのご案内は20時より行います。</p>
           </div>
         </li>
 
         <li class="event-flow__item">
           <div class="event-flow__step">
-            <span class="event-flow__step-num text-caption">03</span>
+            <span class="event-flow__step-num">03</span>
           </div>
           <div class="event-flow__body">
-            <p class="event-flow__time text-caption">20:00〜</p>
-            <p class="event-flow__name text-subheading">一斉打ち上げ</p>
-            <p class="event-flow__desc text-small">スタッフの合図に合わせて、一斉にランタンを空へ放ちます。無数の光が夜空へ昇っていく幻想的な光景をお楽しみください。</p>
+            <p class="event-flow__time">21:00〜</p>
+            <h3 class="event-flow__name">一斉打ち上げ</h3>
+            <p class="event-flow__desc">スタッフの合図に合わせて、一斉にランタンを空へ放ちます。無数の光が夜空へ昇っていく幻想的な光景をお楽しみください。</p>
           </div>
         </li>
 
@@ -151,23 +153,15 @@
     <div class="event-gallery__inner">
 
       <div class="section-header">
-        <span class="section-header__title text-heading">ギャラリー</span>
+        <span class="section-header__title">ギャラリー</span>
         <span class="section-header__bar"></span>
       </div>
 
       <div class="event-gallery__grid">
-        <div class="event-gallery__item">
-          <img src="img/lantern (2).jpg" alt="スカイランタン 01" class="event-gallery__img">
-        </div>
-        <div class="event-gallery__item">
-          <img src="img/lantern (3).jpg" alt="スカイランタン 02" class="event-gallery__img">
-        </div>
-        <div class="event-gallery__item">
-          <img src="img/lantern (4).jpg" alt="スカイランタン 03" class="event-gallery__img">
-        </div>
-        <div class="event-gallery__item">
-          <img src="img/no-image_img.png" alt="スカイランタン 04" class="event-gallery__img">
-        </div>
+        <img src="img/lantern1.jpg" alt="スカイランタン 01" class="event-gallery__img">
+        <img src="img/lantern2.jpg" alt="スカイランタン 02" class="event-gallery__img">
+        <img src="img/lantern3.jpg" alt="スカイランタン 03" class="event-gallery__img">
+        <img src="img/lantern4.jpg" alt="スカイランタン 04" class="event-gallery__img">
       </div>
 
     </div>
@@ -179,7 +173,7 @@
   <!-- ======================================== -->
   <section class="event-cta">
     <div class="event-cta__inner">
-      <a href="index.html#events" class="event-cta__btn text-small">← イベント一覧に戻る</a>
+      <a href="index.html#events" class="event-cta__btn">イベント一覧に戻る</a>
     </div>
   </section>
 
@@ -193,8 +187,8 @@
         <img src="svg/logo.svg" alt="銀河宵市">
       </div>
       <div class="footer__info">
-        <p class="footer__address text-caption">株式会社　Via Lactea<br>〒532-0024 大阪府大阪市淀川区十三本町３丁目４−１１</p>
-        <p class="footer__copy text-caption">© 2026 Via Lactea Inc. All rights reserved.</p>
+        <p class="footer__address">株式会社　Via Lactea<br>〒532-0024 大阪府大阪市淀川区十三本町３丁目４−１１</p>
+        <p class="footer__copy">© 2026 Via Lactea Inc. All rights reserved.</p>
       </div>
     </div>
   </footer>

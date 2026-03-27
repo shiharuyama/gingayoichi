@@ -7,12 +7,12 @@
   <title>銀河宵市-OSAKA GINGAYOICHI-</title>
 
   <!-- OGP -->
-  <meta property="og:title" content="銀河宵市-OSAKA GINGAYOICHI-">
+  <!-- <meta property="og:title" content="銀河宵市-OSAKA GINGAYOICHI-">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale" content="ja_JP"> -->
 
   <!-- Favicon -->
-  <link rel="icon" href="TBD">
+  <!-- <link rel="icon" href="TBD"> -->
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -23,9 +23,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400&family=Shippori+Mincho:wght@600&display=swap"
     rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400&family=Shippori+Mincho:wght@600&family=Zen+Old+Mincho:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="main.css">
+  
+  <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="script.js" defer></script>
@@ -43,6 +49,7 @@
         <li class="header__nav-item"><a href="#map" class="header__nav-link">マップ</a></li>
         <li class="header__nav-item"><a href="#schedule" class="header__nav-link">タイムスケジュール</a></li>
         <li class="header__nav-item"><a href="#shops" class="header__nav-link">出店店舗</a></li>
+        <li class="header__nav-item"><a href="#contact" class="header__nav-link">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -52,30 +59,23 @@
   <!-- ======================================== -->
   <section class="hero">
     <div class="hero__bg">
-      <img src="img/no-image_img.png" alt="">
-    </div>
-    <div class="hero__stars" id="stars"></div>
-
-    <div class="hero__text">
-      <div class="hero__title-ja">銀河宵市</div>
-      <div class="hero__title-en">GINGA YOICHI 2026</div>
-      <p class="hero__catch text-heading">今夜、銀河の市が立つ</p>
-    </div>
-
-    <div class="hero__meta">
-      <p>大阪城公園　太陽の広場</p>
-      <p>開催日　2026年7月18日（土）・19日（日）</p>
-      <p>16時〜21時</p>
+      <img src="img/fv.jpg" alt="">
     </div>
 
     <div class="hero__gradient"></div>
+
+    <div class="hero__meta">
+      <p>大阪城公園　太陽の広場</p>
+      <p>2026年7月18日（土）・19日（日）16時〜22時</p>
+    </div>
+
   </section>
 
   <!-- ======================================== -->
   <!-- About -->
   <!-- ======================================== -->
   <section class="about" id="about">
-    <video class="about__video" autoplay muted loop playsinline>
+    <video class="about__video" autoplay muted loop playsinline poster="img/lantern_fv.jpg">
       <source src="./gingayoichi.SDR.1080p.mp4" type="video/mp4">
     </video>
     <div class="about__overlay"></div>
@@ -92,6 +92,8 @@
         <span class="about__line">願いごとを込めてランタンを空へ放つと、その光はやがて銀河のように広がり、</span>
         <span class="about__line">訪れた人々の想いをそっとつないでいく――</span>
         <span class="about__line">そんな幻想的な体験を届ける宵の市です。</span>
+        <span class="about__line">空へ放つランタンの光とともに、ライブ、マーケット、フードも楽しめる特別な夜。</span>
+        <span class="about__line">銀河宵市を、皆で一緒に満喫しましょう。</span>
       </p>
     </div>
   </section>
@@ -100,13 +102,18 @@
   <!-- Events -->
   <!-- ======================================== -->
   <section class="events" id="events">
+    <div class="ambient-layer" aria-hidden="true">
+      <div class="cloud cloud--left">
+        <img src="svg/cloud.svg" alt="">
+      </div>
+    </div>
     <div class="events__inner">
       <div class="section-header">
-        <span class="section-header__title text-heading">イベント</span>
+        <span class="section-header__title">イベント</span>
         <span class="section-header__bar"></span>
       </div>
 
-      <p class="events__stage-label text-subheading">ステージイベント</p>
+      <p class="events__label">ステージイベント</p>
       <div class="events__stage-cards">
 
         <a href="event-detail.html" class="stage-card">
@@ -114,86 +121,86 @@
             <img src="img/stage.jpg" alt="">
           </div>
           <div class="stage-card__body">
-            <p class="stage-card__title text-subheading">ステージ</p>
+            <p class="stage-card__title">ステージ</p>
             <p class="stage-card__desc">夜の大阪城を舞台に、和楽器や伝統芸能が幻想的な空気を彩ります。</p>
           </div>
         </a>
 
         <a href="event-detail.html" class="stage-card">
           <div class="stage-card__img stage-card__img--drone">
-            <img src="img/no-image_img.png" alt="">
+            <img src="img/drone.jpg" alt="">
           </div>
           <div class="stage-card__body">
-            <p class="stage-card__title text-subheading">ドローンショー</p>
+            <p class="stage-card__title">ドローンショー</p>
             <p class="stage-card__desc">ドローンが夜空に描く、光と音のエンターテインメント。<br>大阪城のライトアップとコラボレーションしたショーをお楽しみください。</p>
           </div>
         </a>
 
         <a href="event-detail.html" class="stage-card">
           <div class="stage-card__img stage-card__img--lantern">
-            <img src="img/no-image_img.png" alt="">
+            <img src="img/lantern_fv.jpg" alt="">
           </div>
           <div class="stage-card__body">
-            <p class="stage-card__title text-subheading">スカイランタンの打ち上げ</p>
+            <p class="stage-card__title">スカイランタンの打ち上げ</p>
             <p class="stage-card__desc">ナイトマーケットのメインイベントとして大阪城の空に一夜限りの天の川を。あなたの願いを光に乗せて。</p>
-            <p class="stage-card__meta text-small">ランタン受け渡し 16:00〜19:00 ／ 打ち上げ 20:00〜<br>参加費 4,500円</p>
+            <p class="stage-card__meta">ランタン受け渡し 16:00〜19:00<br>ランタン打ち上げ 21:00〜<br>参加費 4,500円</p>
           </div>
         </a>
 
       </div>
 
-      <p class="events__mini-label text-subheading">ミニイベント</p>
+      <p class="events__label">ミニイベント</p>
       <div class="events__mini-list">
 
         <a href="event-detail.html" class="mini-event">
           <div class="mini-event__img">
-            <img src="img/no-image_img.png" alt="">
+            <img src="img/yukata.jpeg" alt="">
           </div>
           <div class="mini-event__body">
             <p class="mini-event__title">浴衣割引</p>
-            <p class="mini-event__desc text-small">当日会場に浴衣でお越しいただいた方にドリンク一杯プレゼント！当日浴衣の貸し出しもあり。浴衣で人力車にご乗車の方限定で10%OFF。</p>
-            <p class="mini-event__meta text-small">交換時間 16:00〜19:00 ／ レンタル料 3,000円</p>
+            <p class="mini-event__desc">当日会場に浴衣でお越しいただいた方にドリンク一杯プレゼント！当日浴衣の貸し出しもあり。浴衣で人力車にご乗車の方限定で10%OFF。</p>
+            <p class="mini-event__meta">交換時間 16:00〜19:00 ／ レンタル料 3,000円</p>
           </div>
         </a>
 
         <a href="event-detail.html" class="mini-event">
           <div class="mini-event__img">
-            <img src="img/no-image_img.png" alt="">
+            <img src="img/rickshaw.jpg" alt="">
           </div>
           <div class="mini-event__body">
             <p class="mini-event__title">人力車体験</p>
-            <p class="mini-event__desc text-small">太陽の広場の外周、天守閣付近を人力車で観光しませんか？浴衣でご乗車の方限定で10%OFF。</p>
-            <p class="mini-event__meta text-small">1名30分 9,000円 ／ 2名30分 10,000円</p>
+            <p class="mini-event__desc">太陽の広場の外周、天守閣付近を人力車で観光しませんか？浴衣でご乗車の方限定で10%OFF。</p>
+            <p class="mini-event__meta">1名30分 9,000円 ／ 2名30分 10,000円</p>
           </div>
         </a>
 
         <a href="event-detail.html" class="mini-event">
           <div class="mini-event__img">
-            <img src="img/no-image_img.png" alt="">
+            <img src="img/beer.jpg" alt="">
           </div>
           <div class="mini-event__body">
             <p class="mini-event__title">ビール飲み比べスタンド</p>
-            <p class="mini-event__desc text-small">国内外のクラフトビールを飲み比べ。夜風と共に、極上の一杯を。</p>
+            <p class="mini-event__desc">国内外のクラフトビールを飲み比べ。夜風と共に、極上の一杯を。</p>
           </div>
         </a>
 
         <a href="event-detail.html" class="mini-event">
           <div class="mini-event__img">
-            <img src="img/no-image_img.png" alt="">
+            <img src="img/making_lantern.png" alt="">
           </div>
           <div class="mini-event__body">
             <p class="mini-event__title">星座ランタン作り</p>
-            <p class="mini-event__desc text-small">自分だけの星座ランタンを手作りしよう。世界にひとつだけの灯りをお持ち帰りいただけます。</p>
+            <p class="mini-event__desc">自分だけの星座ランタンを手作りしよう。世界にひとつだけの灯りをお持ち帰りいただけます。</p>
           </div>
         </a>
 
         <a href="event-detail.html" class="mini-event">
           <div class="mini-event__img">
-            <img src="img/no-image_img.png" alt="">
+            <img src="img/anteque.jpg" alt="">
           </div>
           <div class="mini-event__body">
             <p class="mini-event__title">ヴィンテージ雑貨掘り出し物市</p>
-            <p class="mini-event__desc text-small">個性豊かなヴィンテージ雑貨が集まるフリーマーケット。掘り出し物との出会いをお楽しみください。</p>
+            <p class="mini-event__desc">個性豊かなヴィンテージ雑貨が集まるフリーマーケット。掘り出し物との出会いをお楽しみください。</p>
           </div>
         </a>
 
@@ -201,20 +208,19 @@
     </div>
   </section>
 
-  <!-- ======================================== -->
-  <!-- Niche: before Map (slide from left) -->
-  <!-- ======================================== -->
-  <div class="section-niche section-niche--left" aria-hidden="true">
-    <img src="svg/cloud.svg" alt="" class="section-niche__img">
-  </div>
 
   <!-- ======================================== -->
   <!-- Map -->
   <!-- ======================================== -->
   <section class="map" id="map">
+    <div class="ambient-layer" aria-hidden="true">
+      <div class="cloud cloud--right">
+        <img src="svg/cloud2.svg" alt="">
+      </div>
+    </div>
     <div class="map__inner">
       <div class="section-header">
-        <span class="section-header__title text-heading">会場マップ</span>
+        <span class="section-header__title">会場マップ</span>
         <span class="section-header__bar"></span>
       </div>
       <div class="map__img"></div>
@@ -222,20 +228,20 @@
     </div>
   </section>
 
-  <!-- ======================================== -->
-  <!-- Niche: before Schedule (slide from right) -->
-  <!-- ======================================== -->
-  <div class="section-niche section-niche--right" aria-hidden="true">
-    <img src="svg/cloud2.svg" alt="" class="section-niche__img">
-  </div>
+
 
   <!-- ======================================== -->
   <!-- Schedule -->
   <!-- ======================================== -->
   <section class="schedule" id="schedule">
+    <div class="ambient-layer" aria-hidden="true">
+      <div class="cloud cloud--left">
+        <img src="svg/cloud.svg" alt="">
+      </div>
+    </div>
     <div class="schedule__inner">
       <div class="section-header">
-        <span class="section-header__title text-heading">当日タイムスケジュール</span>
+        <span class="section-header__title">当日タイムスケジュール</span>
         <span class="section-header__bar"></span>
       </div>
       <div class="schedule__img">
@@ -244,20 +250,20 @@
     </div>
   </section>
 
-  <!-- ======================================== -->
-  <!-- Niche: after Schedule (slide from left) -->
-  <!-- ======================================== -->
-  <div class="section-niche section-niche--left" aria-hidden="true">
-    <img src="svg/cloud.svg" alt="" class="section-niche__img">
-  </div>
+
 
   <!-- ======================================== -->
   <!-- Shops -->
   <!-- ======================================== -->
   <section class="shops" id="shops">
+    <div class="ambient-layer" aria-hidden="true">
+      <div class="cloud cloud--right">
+        <img src="svg/cloud2.svg" alt="">
+      </div>
+    </div>
     <div class="shops__inner">
       <p class="shops__title">出店紹介一覧</p>
-      <p class="shops__note text-caption">※出店情報はInstagramでも公開しています</p>
+      <p class="shops__note">※出店情報はInstagramでも公開しています</p>
 
       <div class="shops__row">
         <div class="shop-item">
@@ -306,23 +312,23 @@
   <section class="notice" id="notice">
     <div class="notice__inner">
       <div class="notice__block">
-        <p class="notice__heading text-small">●注意事項</p>
+        <p class="notice__heading">注意事項</p>
         <ul class="notice__list">
-          <li class="text-small">会場内は全て禁煙となっております（指定の喫煙所をご利用ください）</li>
-          <li class="text-small">駐車場には数に限りがございます。ご理解のほどよろしくお願いいたします</li>
-          <li class="text-small">立ち入り禁止エリアがございます。案内表示に従ってお楽しみください</li>
-          <li class="text-small">会場内でのドローン等の無人航空機による飛行、撮影は禁止です</li>
-          <li class="text-small">会場内の映像や写真を市のHP等に公開することがあります</li>
+          <li>会場内は全て禁煙となっております（指定の喫煙所をご利用ください）</li>
+          <li>駐車場には数に限りがございます。ご理解のほどよろしくお願いいたします</li>
+          <li>立ち入り禁止エリアがございます。案内表示に従ってお楽しみください</li>
+          <li>会場内でのドローン等の無人航空機による飛行、撮影は禁止です</li>
+          <li>会場内の映像や写真を市のHP等に公開することがあります</li>
         </ul>
       </div>
       <div class="notice__block">
-        <p class="notice__heading text-small">●中止条件</p>
+        <p class="notice__heading">中止条件</p>
         <ul class="notice__list">
-          <li class="text-small">荒天、若しくは雨量（3mm以上）が見込まれる場合</li>
-          <li class="text-small">風速5m/秒以上が見込まれる場合</li>
-          <li class="text-small">※当日10:00判断</li>
-          <li class="text-small">※開催可否については公式HP、及びSNSでご案内します</li>
+          <li>荒天、若しくは雨量（3mm以上）が見込まれる場合</li>
+          <li>風速5m/秒以上が見込まれる場合</li>
         </ul>
+        <p class="notice__note">※当日10:00判断</p>
+        <p class="notice__note">※開催可否については公式HP、及びSNSでご案内します</p>
       </div>
     </div>
   </section>
@@ -333,21 +339,20 @@
   <section class="contact" id="contact">
     <div class="contact__inner">
       <p class="contact__title">お問い合わせ</p>
-      <p class="contact__subtitle text-small">お問い合わせは、お電話、およびメールにて承っております。</p>
+      <p class="contact__subtitle">お問い合わせは、お電話、およびメールにて承っております。</p>
 
       <div class="contact__block">
-        <span class="contact__label text-caption">お電話でのお問い合わせ</span>
-        <p class="contact__value text-small">TEL: 01122-23-4444（お客様用）<br>TEL: 01122-23-5555（企業様用）</p>
-        <p class="contact__note text-caption">受付時間　9:00〜17:00（年中無休）</p>
+        <span class="contact__label">お電話でのお問い合わせ</span>
+        <p class="contact__value">TEL: 01122-23-4444（お客様用）<br>TEL: 01122-23-5555（企業様用）</p>
+        <p class="contact__note">受付時間　9:00〜17:00（年中無休）</p>
       </div>
 
       <div class="contact__block">
-        <span class="contact__label text-caption">メールアドレス</span>
-        <p class="contact__value text-small"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-            data-cfemail="3d54535b527d5a54535a5c4452545e555413574d">[email&#160;protected]</a></p>
+        <span class="contact__label">メールアドレス</span>
+        <p class="contact__value"><a href="mailto:info@example.com">info@example.com</a></p>
       </div>
 
-      <span class="contact__sns-label text-caption">SNS</span>
+      <span class="contact__sns-label">SNS</span>
       <div class="contact__sns-icons">
         <a href="#" class="contact__sns-btn" aria-label="Instagram">
           <i class="fa-brands fa-instagram"></i>
@@ -371,5 +376,12 @@
         <img src="svg/logo.svg" alt="銀河宵市">
       </div>
       <div class="footer__info">
-        <p class="footer__address text-caption">株式会社　Via Lactea<br>〒532-0024 大阪府大阪市淀川区十三本町３丁目４−１１</p>
-        <p class="footer_
+        <p class="footer__address">株式会社　Via Lactea<br>〒532-0024 大阪府大阪市淀川区十三本町３丁目４−１１</p>
+        <p class="footer__copy">© 2026 Via Lactea Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
