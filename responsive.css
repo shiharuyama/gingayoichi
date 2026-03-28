@@ -1,0 +1,203 @@
+/* ======================================== */
+/* Responsive                               */
+/* PCファースト / max-width                  */
+/* ======================================== */
+
+
+/* ======================================== */
+/* 1200px以下                               */
+/* ======================================== */
+
+@media (max-width: 1200px) {
+
+  /* Events */
+  .events__stage-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events__mini-list {
+    gap: 24px 40px;
+  }
+
+  /* Shops */
+  .shops__inner {
+    padding-left: var(--inner-padding-pc);
+    padding-right: var(--inner-padding-pc);
+  }
+
+  .shops__row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Event Gallery */
+  .event-gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ======================================== */
+/* 768px以下                                */
+/* ======================================== */
+
+@media (max-width: 768px) {
+
+  /* Header */
+  .res--tb {
+    display: none;
+  }
+
+  .header__nav-list {
+    gap: 24px;
+  }
+
+  .header__nav-link {
+    font-size: var(--fs-caption);
+  }
+
+  /* Hero */
+  .hero__meta {
+    bottom: 5%;
+    right: var(--inner-padding-sp);
+  }
+
+  .hero__meta p {
+    font-size: var(--fs-small);
+  }
+
+  /* About */
+  .about__inner {
+    padding: var(--inner-padding-sp);
+  }
+
+  /* Events */
+  .events__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  .events__stage-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .events__mini-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Map */
+  .map__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  /* Schedule */
+  .schedule__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  /* Shops */
+  .shops__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  .shops__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  /* Footer */
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer__info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Event Hero */
+  .event-hero__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  /* Event Overview */
+  .event-overview__inner {
+    flex-direction: column;
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  .event-overview__meta {
+    width: 100%;
+  }
+
+  /* Event Flow */
+  .event-flow__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+  .event-flow__item {
+    gap: 24px;
+  }
+
+  /* Event Gallery */
+  .event-gallery__inner {
+    padding-left: var(--inner-padding-sp);
+    padding-right: var(--inner-padding-sp);
+  }
+
+}
+
+
+/* ======================================== */
+/* 480px以下                                */
+/* ======================================== */
+
+@media (max-width: 480px) {
+
+  /* Variables */
+  :root {
+    --fs-heading: 28px;
+    --fs-subheading: 20px;
+  }
+
+  /* Events */
+  .mini-event {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-event__img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Shops */
+  .shops__row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Event Gallery */
+  .event-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Event Flow */
+  .event-flow__item {
+    gap: 16px;
+  }
+
+}

@@ -314,9 +314,19 @@
   padding-right: var(--inner-padding-pc);
 }
 
-.map__img img {
+.map__img {
+  position: relative;
+  aspect-ratio: 3262 / 1758.3;
   width: 100%;
-  object-fit: cover;
+  height: auto;
+}
+
+.map__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ======================================== */
@@ -455,6 +465,7 @@
   background: #00000066;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-inline: 20px;
   text-align: center;
   font-weight: 500;
 }

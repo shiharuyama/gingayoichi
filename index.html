@@ -30,7 +30,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="main.css">
-  
+  <link rel="stylesheet" href="responsive.css">
+
   <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
@@ -46,9 +47,9 @@
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="#events" class="header__nav-link">イベント</a></li>
-        <li class="header__nav-item"><a href="#map" class="header__nav-link">マップ</a></li>
-        <li class="header__nav-item"><a href="#schedule" class="header__nav-link">タイムスケジュール</a></li>
-        <li class="header__nav-item"><a href="#shops" class="header__nav-link">出店店舗</a></li>
+        <li class="header__nav-item res--tb"><a href="#map" class="header__nav-link">マップ</a></li>
+        <li class="header__nav-item res--tb"><a href="#schedule" class="header__nav-link">タイムスケジュール</a></li>
+        <li class="header__nav-item res--tb"><a href="#shops" class="header__nav-link">出店店舗</a></li>
         <li class="header__nav-item"><a href="#contact" class="header__nav-link">お問い合わせ</a></li>
       </ul>
     </nav>
@@ -223,8 +224,10 @@
         <span class="section-header__title">会場マップ</span>
         <span class="section-header__bar"></span>
       </div>
-      <div class="map__img"></div>
-      <img src="img/no-image_img.png" alt="">
+      <div class="map__img">
+        <img src="svg/areamap.svg" alt="" class="map__layer">
+        <img src="img/areamap.png" alt="" class="map__layer">
+      </div>
     </div>
   </section>
 
@@ -264,7 +267,6 @@
     <div class="shops__inner">
       <p class="shops__title">出店紹介一覧</p>
       <p class="shops__note">※出店情報はInstagramでも公開しています</p>
-
       <div class="shops__row">
         <div class="shop-item">
           <div class="shop-item__img shop-item__img--1"></div>
@@ -278,8 +280,6 @@
         <div class="shop-item">
           <div class="shop-item__img shop-item__img--4"></div>
         </div>
-      </div>
-      <div class="shops__row">
         <div class="shop-item">
           <div class="shop-item__img shop-item__img--5"></div>
         </div>
@@ -292,8 +292,6 @@
         <div class="shop-item">
           <div class="shop-item__img shop-item__img--8"></div>
         </div>
-      </div>
-      <div class="shops__row shops__row--last">
         <div class="shop-item">
           <div class="shop-item__img shop-item__img--9"></div>
         </div>
