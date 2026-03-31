@@ -6,14 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>銀河宵市-OSAKA GINGAYOICHI-</title>
 
-  <!-- OGP -->
-  <!-- <meta property="og:title" content="銀河宵市-OSAKA GINGAYOICHI-">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ja_JP"> -->
-
-  <!-- Favicon -->
-  <!-- <link rel="icon" href="TBD"> -->
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -47,7 +39,7 @@
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="#events" class="header__nav-link">イベント</a></li>
-        <li class="header__nav-item res--tb"><a href="#map" class="header__nav-link">マップ</a></li>
+        <li class="header__nav-item res--tb"><a href="#map" class="header__nav-link">イベントマップ</a></li>
         <li class="header__nav-item res--tb"><a href="#schedule" class="header__nav-link">タイムスケジュール</a></li>
         <li class="header__nav-item res--tb"><a href="#shops" class="header__nav-link">出店店舗</a></li>
         <li class="header__nav-item"><a href="#contact" class="header__nav-link">お問い合わせ</a></li>
@@ -117,17 +109,22 @@
       <p class="events__label">ステージイベント</p>
       <div class="events__stage-cards">
 
-        <a href="event-detail.html" class="stage-card">
+        <a href="event-stage.html" class="stage-card">
           <div class="stage-card__img stage-card__img--stage">
             <img src="img/stage.jpg" alt="">
           </div>
           <div class="stage-card__body">
             <p class="stage-card__title">ステージ</p>
-            <p class="stage-card__desc">夜の大阪城を舞台に、和楽器や伝統芸能が幻想的な空気を彩ります。</p>
+            <p class="stage-card__desc">
+              「星詠の舞台」は、星空の下で音楽を楽しむ特別ステージ。<br>
+              多彩なアーティストが奏でる音色とともに、幻想的な夜をお届けします。<br>
+              「笑門の広場」は、笑いが広がるお楽しみステージ。<br>
+              漫才やパフォーマンスなど、思わず笑顔になる時間をお楽しみください。<br>
+            </p>
           </div>
         </a>
 
-        <a href="event-detail.html" class="stage-card">
+        <a href="event-drone.html" class="stage-card">
           <div class="stage-card__img stage-card__img--drone">
             <img src="img/drone.jpg" alt="">
           </div>
@@ -155,7 +152,7 @@
 
         <a href="event-detail.html" class="mini-event">
           <div class="mini-event__img">
-            <img src="img/yukata.jpeg" alt="">
+            <img src="img/yukata.jpg" alt="">
           </div>
           <div class="mini-event__body">
             <p class="mini-event__title">浴衣割引</p>
@@ -197,7 +194,7 @@
 
         <a href="event-detail.html" class="mini-event">
           <div class="mini-event__img">
-            <img src="img/anteque.jpg" alt="">
+            <img src="img/vintage.jpg" alt="">
           </div>
           <div class="mini-event__body">
             <p class="mini-event__title">ヴィンテージ雑貨掘り出し物市</p>
@@ -221,12 +218,11 @@
     </div>
     <div class="map__inner">
       <div class="section-header">
-        <span class="section-header__title">会場マップ</span>
+        <span class="events__label">イベントマップ</span>
         <span class="section-header__bar"></span>
       </div>
       <div class="map__img">
-        <img src="svg/areamap.svg" alt="" class="map__layer">
-        <img src="img/areamap.png" alt="" class="map__layer">
+        <img src="img/areamap.png" alt="">
       </div>
     </div>
   </section>
@@ -244,11 +240,11 @@
     </div>
     <div class="schedule__inner">
       <div class="section-header">
-        <span class="section-header__title">当日タイムスケジュール</span>
+        <span class="events__label">当日タイムスケジュール</span>
         <span class="section-header__bar"></span>
       </div>
       <div class="schedule__img">
-        <img src="svg/timescedule.svg" alt="">
+        <img src="svg/ts__2.svg" alt="">
       </div>
     </div>
   </section>
@@ -258,51 +254,140 @@
   <!-- ======================================== -->
   <!-- Shops -->
   <!-- ======================================== -->
-  <section class="shops" id="shops">
-    <div class="ambient-layer" aria-hidden="true">
-      <div class="cloud cloud--right">
-        <img src="svg/cloud2.svg" alt="">
+  <!--03/24阿部　ここから-->
+  <!-- 出店紹介 -->
+  <section class="shops-section">
+    <div class="section-inner">
+      <div class="shops-title">出店紹介一覧</div>
+
+      <!--ショップグリッド１-->
+      <div class="shops-grid">
+
+
+        <div class="shop-img "><img src="img/octopus.jpg" alt="">
+          <div class="mask">
+            <div class="caption">当店自慢のたこ焼きを醤油、ポン酢など様々な調味料でお楽しみいただけます。テイクアウトもご利用いただけます。<br>
+              <br>
+              たこや【飲食店】
+              大阪市浪速区恵美須東
+              TEL. 06-8195-2635
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-img "><img src="img/3ice.jpg" alt="">
+          <div class="mask">
+            <div class="caption">削りイチゴ・削りフルーツを使用した
+              アイスクリームです。
+              （バニラアイスに削りフルーツを使用）<br>
+              <br>
+              夜アイス専門店【アイスクリーム専門店】
+              大阪市天王寺区茶臼山町1丁目
+              TEL. 06-1457-2984
+            </div>
+          </div>
+        </div>
+        <div class="shop-img "><img src="img/lemonade juice.jpg" alt="">
+          <div class="mask">
+            <div class="caption">エディブルフラワー（食用花を浮かせた
+              度数控えめのカクテルが人気のカフェです。
+              家族連れでのご来店大歓迎です。<br>
+              <br>
+              こよい【カフェ＆バー】
+              大阪府大阪市北区堂島2丁目
+              TEL. 06-3026-8917
+            </div>
+          </div>
+        </div>
+        <div class="shop-img "><img src="img/spareribs2.jpg" alt="">
+          <div class="mask">
+            <div class="caption">素材にこだわった「薪焼きスペアリブ」はテイクアウト限定メニューです。ワインやビールのお供にいかがでしょうか。<br>
+              <br>
+              ローストアンドグロウ【飲食店】
+              大阪市福島区福島7丁目
+              TEL. 06-2847-6103
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="shops__inner">
-      <p class="shops__title">出店紹介一覧</p>
-      <p class="shops__note">※出店情報はInstagramでも公開しています</p>
-      <div class="shops__row">
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--1"></div>
+
+      <!--ショップグリッド２-->
+
+      <div class="shops-grid">
+
+        <div class="shop-img "><img src="img/2cheese toast.jpg" alt="">
+          <div class="mask">
+            <div class="caption">
+              モッツァレラチーズを使ったチーズトースト！
+              チーズがどこまで伸びるのか？是非映えるお写真を撮ってみてください。<br>
+              <br>
+              フローラ・ベイク・ショップ【ベーカリー】
+              大阪市西区京町堀京町ビル2F 1-6-15
+              TEL. 06-3984-1876
+            </div>
+          </div>
         </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--2"></div>
+        <div class="shop-img "><img src="img/lerky.jpg" alt="">
+          <div class="mask">
+            <div class="caption">当店の看板メニュー、「エスニック・ポーク・ジャーキー」
+              をクラフト紙のジップ袋に店舗カラーの袋に入れて提供いたします。<br>
+              <br>
+              エイトピーエム【飲食店】
+              大阪府中津3丁目
+              TEL.080-2598-2479
+            </div>
+          </div>
         </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--3"></div>
+        <div class="shop-img "><img src="img/2app_s.jpg" alt="">
+          <div class="mask">
+            <div class="caption">飴の表面が光を反射してキラキラ（天使の輪）
+              しつつ、キャラクターの可愛さで「映え」と
+              「癒し」を両立させた飴です。<br>
+              <br>
+              シュガー・スピン【お菓子専門店】
+              大阪府中央区心斎橋1丁目
+              TEL. 06-1539-7248
+            </div>
+          </div>
         </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--4"></div>
+        <div class="shop-img "><img src="img/icing cookies.jpg" alt="">
+          <div class="mask">
+            <div class="caption">エディブルフラワーのアイシングクッキーと透明なスリム缶（シーリング缶）に入ったプリンはお子様に大人気です。<br>
+              <br>
+              ルミナ・ヤード【洋菓子店】
+              大阪府中崎町中崎商店街
+              TEL. 06-2398-5149
+            </div>
+          </div>
         </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--5"></div>
-        </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--6"></div>
-        </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--7"></div>
-        </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--8"></div>
-        </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--9"></div>
-        </div>
-        <div class="shop-item">
-          <div class="shop-item__img shop-item__img--10"></div>
-        </div>
-        <div class="shop-item shop-item--empty"></div>
-        <div class="shop-item shop-item--empty"></div>
       </div>
-    </div>
+      <!--div終わり-->
+      <div class="shops-grid">
+        <div class="shop-img "><img src="img/calais.ai.png" alt="">
+          <div class="mask">
+            <div class="caption">おつまみカレー（ごはんはなく、３種類のカレールーをカップにいれて提供。飲み比べができます）が人気です。<br>
+              <br>
+              カレーと灯火【飲食店】
+              大阪市西区立売堀3丁目
+              TEL. 06-5304-9823
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-img "><img src="img/smoothie.jpg" alt="">
+          <div class="mask">
+            <div class="caption">>その場で絞るため、果物の味をそのままお楽しみいただけます。期間限定でパイン＆ココナッツスムージーを提供しております。<br>
+              —
+              ジェイス【カフェ】
+              大阪市西区北堀江安倍ビル1F 1-6-12
+              TEL. 06-8194-2701</div>
+          </div>
+        </div>
+      </div>
+      <p class="shops-note">※出店情報はInstagramでも公開しています</p>
+      <!-- section_inner 終わり -->
   </section>
+  <!--03/24阿部 ここまで-->
 
   <!-- ======================================== -->
   <!-- Notice -->
@@ -362,6 +447,10 @@
           <i class="fa-brands fa-facebook-f"></i>
         </a>
       </div>
+
+      <div><a href="pamphlet_omote.pdf" target="_blank" class="contact__sns-label">パンフレット</a></div>
+      <div><a href="panf-ura.pdf" target="_blank" class="contact__sns-label">パンフレット裏面</a></div>
+      <div><a href="poster.pdf" target="_blank" class="contact__sns-label">ポスター</a></div>
     </div>
   </section>
 
